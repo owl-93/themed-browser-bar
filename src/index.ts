@@ -1,7 +1,7 @@
-import {useEffect, useState} from 'react'
+import {useEffect} from 'react'
 
-const useThemedBrowserBar = (color: string): HTMLMetaElement | null => {
-    const [element, setElement] = useState<HTMLMetaElement | null>(null)
+const useThemedBrowserBar = (color: string): null => {
+    //const [element, setElement] = useState<HTMLMetaElement | null>(null)
     useEffect(() => {
         if (color) {
             const head = document.getElementsByTagName("head")?.item(0)
@@ -10,7 +10,7 @@ const useThemedBrowserBar = (color: string): HTMLMetaElement | null => {
                 for (let i = 0; metaElements && i < metaElements.length; i++) {
                     if (metaElements[i].name === 'theme-color') {
                         metaElements[i].content = color
-                        setElement(metaElements[i])
+                        //setElement(metaElements[i])
                         return undefined
                     }
                 }
@@ -19,7 +19,7 @@ const useThemedBrowserBar = (color: string): HTMLMetaElement | null => {
                 themeElement.name = 'theme-color'
                 themeElement.content = color
                 head.appendChild(themeElement)
-                setElement(themeElement)
+                //setElement(themeElement)
             } else {
                 console.log("unable to locate document head")
             }
@@ -29,7 +29,7 @@ const useThemedBrowserBar = (color: string): HTMLMetaElement | null => {
         return undefined
     }, [color])
 
-    return element
+    return null
 }
 
 export { useThemedBrowserBar }
