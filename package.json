@@ -1,0 +1,25 @@
+{
+  "name": "@owl-93/themed-browser-bar",
+  "version": "1.0.0",
+  "description": "A lightweight backage providing a hook to manage theme meta tag in your document head. It is meant to allow you to dynamically update the theme color of your website so that you can control the color of the browser url bar on certain mobile browsers.",
+  "main": "index.js",
+  "scripts": {
+    "test": "npm test"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/owl-93/themed-browser-bar.git"
+  },
+  "keywords": [
+    "theme",
+    "browser",
+    "bar",
+    "color"
+  ],
+  "author": "Stephen Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/owl-93/themed-browser-bar/issues"
+  },
+  "homepage": "https://github.com/owl-93/themed-browser-bar#readme"
+}
