@@ -21,5 +21,8 @@
   "bugs": {
     "url": "https://github.com/owl-93/themed-browser-bar/issues"
   },
-  "homepage": "https://github.com/owl-93/themed-browser-bar#readme"
+  "homepage": "https://github.com/owl-93/themed-browser-bar#readme",
+  "dependencies": {
+    "react": "^17.0.2"
+  }
 }

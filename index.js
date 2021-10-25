@@ -1,3 +1,5 @@
+import {useEffect, useState} from 'react'
+
 const themeTagId = 'tbb-id'
 
 exports.useThemedBrowserBar = (color) => {
