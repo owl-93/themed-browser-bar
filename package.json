@@ -1,6 +1,6 @@
 {
   "name": "@owl-93/themed-browser-bar",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "A lightweight backage providing a hook to manage theme meta tag in your document head. It is meant to allow you to dynamically update the theme color of your website so that you can control the color of the browser url bar on certain mobile browsers.",
   "main": "./lib/cjs/index.js",
   "module": "./lib/esm/index.js",
