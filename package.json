@@ -1,10 +1,15 @@
 {
   "name": "@owl-93/themed-browser-bar",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A lightweight backage providing a hook to manage theme meta tag in your document head. It is meant to allow you to dynamically update the theme color of your website so that you can control the color of the browser url bar on certain mobile browsers.",
-  "main": "index.js",
+  "main": "./lib/cjs/index.js",
+  "module": "./lib/esm/index.js",
+  "types": "./lib/esm.index.d.ts",
   "scripts": {
-    "test": "npm test"
+    "test": "npm test",
+    "build": "yarn build:esm && yarn build:cjs",
+    "build:esm": "tsc",
+    "build:cjs": "tsc --module commonjs --outDir lib/cjs"
   },
   "repository": {
     "type": "git",
@@ -22,7 +27,13 @@
     "url": "https://github.com/owl-93/themed-browser-bar/issues"
   },
   "homepage": "https://github.com/owl-93/themed-browser-bar#readme",
-  "dependencies": {
-    "react": "^17.0.2"
+  "peerDependencies": {
+    "react": "^16.8.0",
+    "react-dom": "^16.8.0"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.32",
+    "@types/react-dom": "^17.0.10",
+    "typescript": "^4.4.4"
   }
 }
